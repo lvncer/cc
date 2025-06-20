@@ -1,6 +1,13 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(osascript:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "deepwiki"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }
