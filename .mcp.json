@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "deepwiki": {
+      "type": "sse",
+      "url": "https://mcp.deepwiki.com/sse"
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp",
+      "headers": {
+        "Authorization": "YOUR_PAT_HERE"
+      }
+    }
+  }
+}
