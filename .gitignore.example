@@ -38,4 +38,4 @@ pids
 Thumbs.db
 
 # MCP Configuration
-mcp.json
+.mcp.json

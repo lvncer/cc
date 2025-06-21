@@ -27,31 +27,31 @@
 #### 1. File Edit Complete
 
 ```bash
-osascript -e 'display notification "📝 File Edit Complete: [filename]" with title "Claude Code" sound name "Tink"'
+osascript -e 'display notification "File Edit Complete: [filename]" with title "Claude Code" sound name "Tink"'
 ```
 
 #### 2. Build/Compile Complete
 
 ```bash
-osascript -e 'display notification "🔨 Build Complete" with title "Claude Code" sound name "Hero"'
+osascript -e 'display notification "Build Complete" with title "Claude Code" sound name "Hero"'
 ```
 
 #### 3. Test Execution Complete
 
 ```bash
-osascript -e 'display notification "✅ Test Complete ([result])" with title "Claude Code" sound name "Glass"'
+osascript -e 'display notification "Test Complete ([result])" with title "Claude Code" sound name "Glass"'
 ```
 
 #### 4. Search/Analysis Complete
 
 ```bash
-osascript -e 'display notification "🔍 Search/Analysis Complete" with title "Claude Code" sound name "Ping"'
+osascript -e 'display notification "Search/Analysis Complete" with title "Claude Code" sound name "Ping"'
 ```
 
 #### 5. Install/Setup Complete
 
 ```bash
-osascript -e 'display notification "📦 Install/Setup Complete" with title "Claude Code" sound name "Funk"'
+osascript -e 'display notification "Install/Setup Complete" with title "Claude Code" sound name "Funk"'
 ```
 
 ## Notification Required Scenarios (ALL MANDATORY)
