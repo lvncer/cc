@@ -7,16 +7,46 @@
       "Bash(terminal-notifier:*)"
     ]
   },
-  "enableAllProjectMcpServers": true,
+  "enableAllProjectMcpServers": false,
   "enabledMcpjsonServers": [],
   "hooks": {
+    "EventName": [
+      {
+        "matcher": "Bash|Read|Edit|MultiEdit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Morse.aiff"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Bottle.aiff"
+          },
+          {
+            "type": "command",
+            "command": "terminal-notifier -title 'Claude Code - ' -message 'Action Required for Your Next Command.'"
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "matcher": "",
         "hooks": [
           {
             "type": "command",
-            "command": "terminal-notifier -title 'Claude Code' -message 'Task Execution Complete' -sound default"
+            "command": "afplay /System/Library/Sounds/Hero.aiff"
+          },
+          {
+            "type": "command",
+            "command": "terminal-notifier -title 'Claude Code' -message 'Task completed successfully!'"
           }
         ]
       }
