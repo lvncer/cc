@@ -1,14 +1,25 @@
 {
   "permissions": {
     "allow": [
-      "Bash(osascript:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(terminal-notifier:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
-  "enabledMcpjsonServers": [
-    "deepwiki"
-  ]
+  "enabledMcpjsonServers": [],
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "terminal-notifier -title 'Claude Code' -message 'Task Execution Complete' -sound default"
+          }
+        ]
+      }
+    ]
+  }
 }

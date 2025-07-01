@@ -23,28 +23,6 @@
 
 **REQUIRED**: Send notifications for ALL task completions without exception. Notification content must be appropriately described according to the executed task.
 
-### Notification Templates (Task-specific Sounds)
-
-#### Task Execution Complete
-
-```bash
-terminal-notifier -title 'Claude Code' -message 'Task Execution Complete' -sound default
-```
-
-## Notification Required Scenarios (ALL MANDATORY)
-
-- After file edits
-- After long processes (10+ seconds)
-- After build/test execution
-- After package installation
-- After multiple file processing
-- After error fixes
-- After user request completion
-- After config file updates
-- After search/analysis
-- After command execution
-- **ALL task completions**
-
 ## Workflows
 
 ### 1. Preparation
