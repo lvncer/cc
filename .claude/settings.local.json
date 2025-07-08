@@ -5,6 +5,19 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(terminal-notifier:*)"
+    ],
+    "deny": [
+      "Bash(git merge:*)",
+      "Bash(npm run dev:*)",
+      "Bash(rm /: *)",
+      "Bash(rm ~/: *)",
+      "Bash(rm -rf: *)",
+      "Bash(sudo rm: *)",
+      "Bash(chmod -R: *)",
+      "Bash(chown -R: *)",
+      "Bash(dd: *)",
+      "Bash(mkfs: *)",
+      "Bash(fdisk: *)"
     ]
   },
   "enableAllProjectMcpServers": false,
